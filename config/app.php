@@ -157,6 +157,7 @@ return [
         Sphere\Providers\AuthServiceProvider::class,
         Sphere\Providers\EventServiceProvider::class,
         Sphere\Providers\RouteServiceProvider::class,
+        Sphere\Providers\FormatterServiceProvider::class,
 
     ],
 

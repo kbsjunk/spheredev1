@@ -28,7 +28,7 @@ class Kernel extends HttpKernel
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \Sphere\Http\Middleware\VerifyCsrfToken::class,
+//             \Sphere\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'api' => [
@@ -49,5 +49,6 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \Sphere\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'mailgun' => \Sphere\Http\Middleware\VerifyMailgun::class,
     ];
 }

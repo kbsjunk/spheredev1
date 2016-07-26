@@ -45,6 +45,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        if (!$request->has('sample') && $request->has('X-Mailgun-Incoming')) {
+          return response()->make($e->getMessage(), 404);
+        }
+      
         return parent::render($request, $e);
     }
 }

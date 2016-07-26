@@ -6,7 +6,8 @@ use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 use Sphere\User;
-// use Sphere\Site;
+use Sphere\Group;
+use Sphere\Site;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -28,7 +29,18 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(Router $router)
     {
         $this->model('users', User::class);
-//         $this->model('sites', Site::class);
+        $this->model('groups', Group::class);
+        $this->model('sites', Site::class);
+      
+        $this->model('mg_user', User::class, function() {
+          abort(406);
+        });
+        $this->model('mg_group', Group::class, function() {
+          abort(406);
+        });
+        $this->model('mg_site', Site::class, function() {
+          abort(406);
+        });
 
         parent::boot($router);
     }

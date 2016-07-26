@@ -1,0 +1,57 @@
+{
+    "Woodwinds": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "Cor Anglais",
+        "Clarinet in B♭",
+        "Bass Clarinet",
+        "Clarinet in E♭",
+        "Bassoon",
+        "Contrabassoon"
+    ],
+    "Brass": [
+        "German Horn in F",
+        "German Horn in B♭",
+        "French Horn",
+        "Vienna Horn",
+        "Trumpet in B♭",
+        "Trumpet in C",
+        "Trombone",
+        "Bass Trombone",
+        "Tuba",
+        "Baritone Horn",
+        "Euphonium",
+        "Wagner Tuba"
+    ],
+    "Keyboards": [
+        "Piano",
+        "Celesta",
+        "Pipe Organ",
+        "Harp"
+    ],
+    "Strings": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Cello",
+        "Double Bass"
+    ],
+    "Percussion": [
+        "Timpani",
+        "Snare Drum",
+        "Tenor Drum",
+        "Bass Drum",
+        "Cymbals",
+        "Tam-tam",
+        "Triangle",
+        "Wood Block",
+        "Tambourine",
+        "Glockenspiel",
+        "Xylophone",
+        "Vibraphone",
+        "Tubular Bells",
+        "Marimba",
+        "Drum Kit"
+    ]
+}

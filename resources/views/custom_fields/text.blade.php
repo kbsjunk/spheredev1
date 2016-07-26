@@ -1,0 +1,1 @@
+<input type="{{ $type }}" class="form-control" id="{{ $field->getSlug() }}" placeholder="{{ $field->getLabel() }}" name="{{ $field->getName() }}" value="{{ $field->getValue($entity) }}">
